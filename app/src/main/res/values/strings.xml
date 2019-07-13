@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">GradLink</string>
+    <string-array name="years">
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+    </string-array>
+    <string-array name="degree">
+        <item>Commerce/Information Systems </item>
+        <item>Information Systems </item>
+        <item>Information Systems (Co-op) </item>
+    </string-array>
+    <string-array name="major">
+        <item>Accounting</item>
+        <item>Business Economics</item>
+        <item>Business Strategy Econ</item>
+        <item>Finance</item>
+        <item>International Business</item>
+        <item>Marketing</item>
+        <item>Management</item>
+        <item>Human Resource Management</item>
+        <item>Business Law</item>
+        <item>Taxation</item>
+    </string-array>
 </resources>
