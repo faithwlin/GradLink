@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 
 public class CreateProfileActivity extends AppCompatActivity {
@@ -15,7 +16,7 @@ public class CreateProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_profile);
 
-        Button createProfile = (Button) findViewById(R.id.createProfile);
+        ImageButton createProfile = (ImageButton) findViewById(R.id.createProfile);
         Spinner spinnerYear = (Spinner) findViewById(R.id.spinnerYear);
         Spinner spinnerDegree = (Spinner) findViewById(R.id.spinnerDegree);
         Spinner spinnerMajor = (Spinner) findViewById(R.id.spinnerMajor);
