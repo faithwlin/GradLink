@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">GradLink</string>
+    <string name="facebook_app_id">914001238945724</string>
+    <string name="fb_login_protocol_scheme">fb914001238945724</string>
     <string-array name="years">
         <item>2015</item>
         <item>2016</item>
