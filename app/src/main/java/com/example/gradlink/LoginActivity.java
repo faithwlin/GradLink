@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,6 +37,8 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         fbLoginButton = findViewById(R.id.fbLoginButton);
+        fbLoginButton.setBackgroundResource(R.drawable.fbsignup);
+        fbLoginButton.setCompoundDrawablesWithIntrinsicBounds(null, null, null, null);
         emailText = findViewById(R.id.emailText);
         nameText = findViewById(R.id.nameText);
 
