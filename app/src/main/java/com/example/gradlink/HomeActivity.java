@@ -1,19 +1,27 @@
 package com.example.gradlink;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
+import android.view.LayoutInflater;
 import android.view.View;
 
-public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
+public class HomeActivity extends NavigationActivity implements View.OnClickListener {
 
     private CardView exploremajorsCard, puzzleplannerCard, myavatarCard, myachievementsCard, coursechecklistCard, myprofileCard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_actvitity);
+
+        // Inflate the layout. Instantiate layout XML file
+        LayoutInflater inflater = (LayoutInflater)
+                this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View contentView = inflater.inflate(R.layout.activity_main, null, false);
+        drawer.addView(contentView, 0);
+        navigationView.setCheckedItem(R.id.homenav);
 
         exploremajorsCard = (CardView) findViewById(R.id.exploremajorscard);
         puzzleplannerCard = (CardView) findViewById(R.id.puzzleplannercard);

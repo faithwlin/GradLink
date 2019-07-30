@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/item1">
+        <item
+            android:id="@+id/homenav"
+            android:icon="@drawable/homenavicon"
+            android:title="Dashboard" />
+    </group>
+
+    <group android:id="@+id/item2">
+        <item
+            android:id="@+id/exploremajorsnav"
+            android:icon="@drawable/explorenavicon"
+            android:title="OSI Layers" />
+    </group>
+
+    <group android:id="@+id/item3">
+        <item
+            android:id="@+id/puzzleplannernav"
+            android:icon="@drawable/puzzlenavicon"
+            android:title="Flashcards" />
+    </group>
+
+    <group android:id="@+id/item4">
+        <item
+            android:id="@+id/myavatarnav"
+            android:icon="@drawable/avatarnavicon"
+            android:title="Quiz" />
+    </group>
+
+    <group android:id="@+id/item5">
+        <item
+            android:id="@+id/myachievementsnav"
+            android:icon="@drawable/achievementsnavicon"
+            android:title="My Progress" />
+    </group>
+
+    <group android:id="@+id/item6">
+        <item
+            android:id="@+id/myprofilenav"
+            android:icon="@drawable/profilenavicon"
+            android:title="My Profile"  />
+    </group>
+
+</menu>
