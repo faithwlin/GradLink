@@ -7,26 +7,38 @@
 
     tools:context=".LoginActivity">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/signupbackground" />
+
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="440dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:text="Faith Lin"
         android:textColor="#000000"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+        app:layout_constraintBottom_toTopOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.84" />
 
     <TextView
         android:id="@+id/email"
         android:layout_width="311dp"
         android:layout_height="50dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:gravity="center"
@@ -35,10 +47,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/loginBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintHorizontal_bias="0.652"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/name"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.871" />
 
     <ImageButton
         android:id="@+id/loginBtn"
@@ -53,10 +65,11 @@
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gmailsignup" />
+        app:layout_constraintVertical_bias="0.751"
+        app:srcCompat="@drawable/gmaillogin" />
 
     <ImageButton
         android:id="@+id/logoutBtn"
@@ -69,17 +82,17 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:adjustViewBounds="true"
-        android:background="#3BA4FF"
+        android:background="#003BA4FF"
         android:maxWidth="100dp"
         android:maxHeight="100dp"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email"
-        app:layout_constraintVertical_bias="0.386"
-        app:srcCompat="@drawable/com_facebook_close" />
+        app:layout_constraintVertical_bias="0.8"
+        app:srcCompat="@drawable/logout" />
 
     <ImageButton
         android:id="@+id/enterBtn"
@@ -98,10 +111,21 @@
         android:scaleType="fitXY"
         app:layout_constraintBottom_toTopOf="@+id/logoutBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/getstartedbutton" />
+        app:layout_constraintVertical_bias="0.908"
+        app:srcCompat="@drawable/enterwithaccount" />
+
+    <TextView
+        android:id="@+id/Loginto"
+        android:layout_width="187dp"
+        android:layout_height="100dp"
+        android:text="Login to GradLink"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="67dp" />
 
 </android.support.constraint.ConstraintLayout>
