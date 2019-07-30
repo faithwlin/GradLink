@@ -11,7 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".MyProfileActivity"></activity>
+        <activity
+            android:name=".NavigationActivity"
+            android:label=".NavigationActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        </activity>
+
+        <activity android:name=".CourseChecklistActivity" />
+        <activity android:name=".MyProfileActivity" />
         <activity android:name=".MyAchievementsActivity" />
         <activity android:name=".MyAvatarActivity" />
         <activity android:name=".PuzzlePlannerActivity" />
