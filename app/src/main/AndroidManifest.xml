@@ -11,13 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".ExploreMARK"></activity>
+        <activity android:name=".ExploreACCT" />
+        <activity android:name=".ExploreFINS" />
+        <activity android:name=".ExploreINFS" />
         <activity
             android:name=".NavigationActivity"
             android:label=".NavigationActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
-
-        </activity>
-
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".CourseChecklistActivity" />
         <activity android:name=".MyProfileActivity" />
         <activity android:name=".MyAchievementsActivity" />
