@@ -11,28 +11,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".ExploreMARK"></activity>
+        <activity android:name=".ExploreFINS"></activity>
+        <activity android:name=".ExploreMARK" />
         <activity android:name=".ExploreACCT" />
-        <activity android:name=".ExploreFINS" />
         <activity android:name=".ExploreINFS" />
         <activity
             android:name=".NavigationActivity"
             android:label=".NavigationActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".CourseChecklistActivity" />
-        <activity android:name=".MyProfileActivity"
-            android:label="My Profile"/>
-        <activity android:name=".MyAchievementsActivity"
-            android:label="My Achievements"/>
-        <activity android:name=".MyAvatarActivity"
-            android:label="My Avatar"/>
-        <activity android:name=".PuzzlePlannerActivity"
-            android:label="Degree Puzzle Planner"/>
-        <activity android:name=".ExploreMajorsActivity"
-            android:label="Explore Majors"/>
+        <activity
+            android:name=".MyProfileActivity"
+            android:label="My Profile" />
+        <activity
+            android:name=".MyAchievementsActivity"
+            android:label="My Achievements" />
+        <activity
+            android:name=".MyAvatarActivity"
+            android:label="My Avatar" />
+        <activity
+            android:name=".PuzzlePlannerActivity"
+            android:label="Degree Puzzle Planner" />
+        <activity
+            android:name=".ExploreMajorsActivity"
+            android:label="Explore Majors" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".HomeActivity"
-            android:label="Dashboard"/>
+        <activity
+            android:name=".HomeActivity"
+            android:label="Dashboard" />
         <activity android:name=".CreateProfileActivity" />
         <activity android:name=".WelcomeActivity" />
         <activity android:name=".SplashScreenActivity">
