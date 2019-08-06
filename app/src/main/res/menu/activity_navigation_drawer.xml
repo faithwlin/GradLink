@@ -15,28 +15,28 @@
         <item
             android:id="@+id/exploremajorsnav"
             android:icon="@drawable/explorenavicon"
-            android:title="OSI Layers" />
+            android:title="Explore Majors" />
     </group>
 
     <group android:id="@+id/item3">
         <item
             android:id="@+id/puzzleplannernav"
             android:icon="@drawable/puzzlenavicon"
-            android:title="Flashcards" />
+            android:title="Puzzle Planner" />
     </group>
 
     <group android:id="@+id/item4">
         <item
             android:id="@+id/myavatarnav"
             android:icon="@drawable/avatarnavicon"
-            android:title="Quiz" />
+            android:title="My Avatar" />
     </group>
 
     <group android:id="@+id/item5">
         <item
             android:id="@+id/myachievementsnav"
             android:icon="@drawable/achievementsnavicon"
-            android:title="My Progress" />
+            android:title="My Achievements" />
     </group>
 
     <group android:id="@+id/item6">

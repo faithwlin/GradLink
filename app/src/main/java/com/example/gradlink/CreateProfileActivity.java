@@ -27,8 +27,9 @@ public class CreateProfileActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-            Intent i = new Intent (CreateProfileActivity.this, HomeActivity.class);
-            startActivity(i);
+//            Intent i = new Intent (CreateProfileActivity.this, HomeActivity.class);
+//            startActivity(i);
+            startActivity(new Intent (CreateProfileActivity.this, HomeActivity.class));
             }
         });
 

@@ -11,6 +11,7 @@ import android.view.View;
 public class ExploreMajorsActivity extends NavigationActivity implements View.OnClickListener {
 
     private CardView infsCard, finsCard, acctCard, markCard;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
