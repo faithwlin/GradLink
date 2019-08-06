@@ -16,7 +16,7 @@ import com.google.android.youtube.player.YouTubePlayerView;
 
 public class ExploreINFS extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener, View.OnClickListener {
 
-    static final String GOOGLE_API_KEY = "AIzaSyC8N9d1IKrSrZ7N_r_VY8A86rErk64OlBY";
+    static final String GOOGLE_API_KEY = "AIzaSyC-TaeczGtK2yJHGPQOjsuaz-fnS1U-feQ";
     static final String YOUTUBE_VIDEO = "fMCJFTX36J4";
     final int REQUEST_CODE = 1;
 
