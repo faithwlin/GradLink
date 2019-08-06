@@ -1,5 +1,6 @@
 package com.example.gradlink;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -99,7 +100,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private void enter()
     {
 
-        startActivity(new Intent (LoginActivity.this, MyProfileActivity.class));
+        startActivity(new Intent (LoginActivity.this, CreateProfileActivity.class));
 
     }
 
