@@ -16,6 +16,9 @@ public class ExploreMajorsActivity extends NavigationActivity implements View.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        //Slide in and out animation for activity transition
+        overridePendingTransition(R.anim.animation_enter, R.anim.animation_leave);
+
         // Inflate the layout. Instantiate layout XML file
         LayoutInflater inflater = (LayoutInflater)
                 this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);

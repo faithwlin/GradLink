@@ -9,5 +9,8 @@ public class CourseChecklistActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_course_checklist);
+
+        //Slide in and out animation for activity transition
+        overridePendingTransition(R.anim.animation_enter, R.anim.animation_leave);
     }
 }

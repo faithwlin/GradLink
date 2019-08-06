@@ -9,6 +9,7 @@ import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
+import com.google.android.youtube.player.YouTubePlayer.Provider;
 
 public class ExploreACCT extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
 
@@ -24,6 +25,9 @@ public class ExploreACCT extends YouTubeBaseActivity implements YouTubePlayer.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_explore_acct);
+
+        //Slide in and out animation for activity transition
+        overridePendingTransition(R.anim.animation_enter, R.anim.animation_leave);
 
         //Define YouTubePlayerView
         youTubePlayerView = (YouTubePlayerView) findViewById(R.id.player);

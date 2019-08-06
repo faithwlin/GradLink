@@ -31,6 +31,9 @@ public class ExploreINFS extends YouTubeBaseActivity implements YouTubePlayer.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_explore_infs);
 
+        //Slide in and out animation for activity transition
+        overridePendingTransition(R.anim.animation_enter, R.anim.animation_leave);
+
         //
         infs1602 = (Button) findViewById(R.id.INFS1602);
         infs1603 = (Button) findViewById(R.id.INFS1603);
