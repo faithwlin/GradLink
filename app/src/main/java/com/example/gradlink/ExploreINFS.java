@@ -7,22 +7,25 @@ import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 
-public class ExploreINFS extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
+public class ExploreINFS extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener, View.OnClickListener {
 
     static final String GOOGLE_API_KEY = "AIzaSyC8N9d1IKrSrZ7N_r_VY8A86rErk64OlBY";
     static final String YOUTUBE_VIDEO = "fMCJFTX36J4";
     final int REQUEST_CODE = 1;
-    private CardView infs1602, infs1603, infs1609, infs2603, infs2605, infs2608;
+
+    private Button infs1602, infs1603, infs1609, infs2603, infs2605, infs2608;
 
     Toolbar toolbar;
 
     YouTubePlayerView youTubePlayerView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,12 +33,12 @@ public class ExploreINFS extends YouTubeBaseActivity implements YouTubePlayer.On
         setContentView(R.layout.activity_explore_infs);
 
         //
-        infs1602 = (CardView) findViewById(R.id.INFS1602);
-        infs1603 = (CardView) findViewById(R.id.INFS1603);
-        infs1609 = (CardView) findViewById(R.id.INFS1609);
-        infs2603 = (CardView) findViewById(R.id.INFS2603);
-        infs2605 = (CardView) findViewById(R.id.INFS2605);
-        infs2608 = (CardView) findViewById(R.id.INFS2608);
+        infs1602 = (Button) findViewById(R.id.INFS1602);
+        infs1603 = (Button) findViewById(R.id.INFS1603);
+        infs1609 = (Button) findViewById(R.id.INFS1609);
+        infs2603 = (Button) findViewById(R.id.INFS2603);
+        infs2605 = (Button) findViewById(R.id.INFS2605);
+        infs2608 = (Button) findViewById(R.id.INFS2608);
 
         //
         // Add Click Listener to the cards
