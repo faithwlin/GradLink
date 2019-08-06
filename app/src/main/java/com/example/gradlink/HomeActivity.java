@@ -19,7 +19,7 @@ public class HomeActivity extends NavigationActivity implements View.OnClickList
         // Inflate the layout. Instantiate layout XML file
         LayoutInflater inflater = (LayoutInflater)
                 this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View contentView = inflater.inflate(R.layout.activity_main, null, false);
+        View contentView = inflater.inflate(R.layout.activity_home_actvitity, null, false);
         drawer.addView(contentView, 0);
         navigationView.setCheckedItem(R.id.homenav);
 
