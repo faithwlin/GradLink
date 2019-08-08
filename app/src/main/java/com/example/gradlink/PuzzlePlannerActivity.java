@@ -6,6 +6,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.DragEvent;
 import android.view.LayoutInflater;
@@ -15,9 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
 public class PuzzlePlannerActivity extends NavigationActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,12 +30,7 @@ public class PuzzlePlannerActivity extends NavigationActivity {
         View contentView = inflater.inflate(R.layout.activity_puzzle_planner, null, false);
         drawer.addView(contentView, 0);
         navigationView.setCheckedItem(R.id.puzzleplannernav);
+
+
     }
 }
-
-
-
-
-
-
-
