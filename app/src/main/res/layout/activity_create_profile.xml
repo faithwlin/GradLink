@@ -8,11 +8,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="437dp"
-        android:layout_height="769dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="414dp"
+        android:layout_height="864dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/createprofilebackground" />
@@ -50,8 +49,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="406dp"
-        android:layout_height="91dp"
+        android:layout_width="362dp"
+        android:layout_height="89dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/degree"
@@ -64,8 +63,8 @@
 
     <Spinner
         android:id="@+id/spinnerYear"
-        android:layout_width="363dp"
-        android:layout_height="42dp"
+        android:layout_width="309dp"
+        android:layout_height="46dp"
         android:layout_marginTop="92dp"
         android:layout_marginBottom="40dp"
         android:fadingEdge="horizontal"
@@ -92,13 +91,13 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="406dp"
-        android:layout_height="91dp"
+        android:layout_width="367dp"
+        android:layout_height="99dp"
         android:layout_marginTop="38dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/major"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/degree"
         app:layout_constraintVertical_bias="0.0"
@@ -106,8 +105,8 @@
 
     <Spinner
         android:id="@+id/spinnerDegree"
-        android:layout_width="356dp"
-        android:layout_height="42dp"
+        android:layout_width="320dp"
+        android:layout_height="41dp"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="8dp"
         android:spinnerMode="dropdown"
@@ -117,8 +116,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/degree"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/createprofilebackground"
-        />
+        app:srcCompat="@drawable/createprofilebackground" />
 
     <TextView
         android:id="@+id/major"
@@ -138,19 +136,19 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="406dp"
-        android:layout_height="91dp"
-        android:layout_marginTop="47dp"
+        android:layout_width="367dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="44dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.636"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/major"
         app:srcCompat="@drawable/rectangle1393x" />
 
     <Spinner
         android:id="@+id/spinnerMajor"
-        android:layout_width="341dp"
-        android:layout_height="42dp"
+        android:layout_width="313dp"
+        android:layout_height="46dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="144dp"
@@ -160,22 +158,23 @@
         android:spinnerMode="dropdown"
         app:layout_constraintBottom_toTopOf="@+id/createProfile"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/degree"
-        app:layout_constraintVertical_bias="0.246" />
+        app:layout_constraintVertical_bias="0.247" />
 
     <ImageView
         android:id="@+id/createProfile"
-        android:layout_width="386dp"
+        android:layout_width="290dp"
         android:layout_height="63dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/createprofilebutton" />
 

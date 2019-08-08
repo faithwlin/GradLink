@@ -15,7 +15,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 public class HomeActivity extends NavigationActivity implements View.OnClickListener {
 
     private CardView exploremajorsCard, puzzleplannerCard, myavatarCard, myachievementsCard, coursechecklistCard, myprofileCard;
-    private TextView name;
+//    private TextView name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,13 +42,13 @@ public class HomeActivity extends NavigationActivity implements View.OnClickList
         coursechecklistCard.setOnClickListener(this);
         myprofileCard.setOnClickListener(this);
 
-        //Get profile name from google account
-        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(getApplicationContext());
-        String displayName = acct.getGivenName();
-
-        //define and set name in TextView
-        name = findViewById(R.id.name);
-        name.setText(displayName);
+//        //Get profile name from google account
+//        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(getApplicationContext());
+//        String displayName = acct.getGivenName();
+//
+//        //define and set name in TextView
+//        name = findViewById(R.id.name);
+//        name.setText(displayName);
     }
 
     @Override
