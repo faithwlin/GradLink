@@ -42,4 +42,25 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+
+    <string name="face_shape">Face Shape</string>
+    <string name="hair">Hair</string>
+    <string name="clothes">Clothes</string>
+    <string name="jacket">Jacket</string>
+    <string name="earrings">Earrings</string>
+    <string name="necklace">Necklace</string>
+    <string name="facial_hair">Facial Hair</string>
+    <string name="tie">Tie</string>
+    <string name="glasses">Glasses</string>
+    <string name="title">Avatar</string>
+    <string name="textView_Face">Face</string>
+    <string name="textView_Hair">Hair</string>
+    <string name="textView_Clothing">Clothes</string>
+    <string name="textView_Jacket">Jacket</string>
+    <string name="textView_Ties">Ties</string>
+    <string name="textView_Accessories">Accessories</string>
+    <string name="textView_Facial_Hair">Beard</string>
+    <string name="textView_Glasses">Glasses</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
 </resources>

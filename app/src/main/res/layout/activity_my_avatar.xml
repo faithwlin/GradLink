@@ -4,6 +4,834 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MyAvatarActivity">
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="157dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/f_FaceOval"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.557" />
+
+
+    <ImageView
+        android:id="@+id/maleButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="@string/male"
+        app:layout_constraintBottom_toBottomOf="@id/formatScrollView"
+        app:layout_constraintLeft_toLeftOf="@id/formatScrollView"
+        app:srcCompat="@drawable/icon_male" />
+
+    <ImageView
+        android:id="@+id/femaleButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/female"
+        app:layout_constraintBottom_toBottomOf="@id/formatScrollView"
+        app:layout_constraintLeft_toRightOf="@id/maleButton"
+        app:srcCompat="@drawable/icon_female" />
+
+    <ImageView
+        android:id="@+id/eraseButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/female"
+        app:layout_constraintBottom_toBottomOf="@id/formatScrollView"
+        app:layout_constraintRight_toRightOf="@id/formatScrollView"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp"
+        app:srcCompat="@drawable/icon_erase" />
+
+
+    <ImageView
+        android:id="@+id/f_FaceOval"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/face_shape"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/f_face_oval" />
+
+    <ImageView
+        android:id="@+id/f_FaceRound"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/face_shape"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/f_face_round" />
+
+    <ImageView
+        android:id="@+id/f_FaceSquare"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/face_shape"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/f_face_square" />
+
+    <ImageView
+        android:id="@+id/f_FaceTriangle"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/face_shape"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/f_face_triangle" />
+
+    <ImageView
+        android:id="@+id/m_FaceOval"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/face_shape"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_face_oval" />
+
+    <ImageView
+        android:id="@+id/m_FaceRound"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/face_shape"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_face_round" />
+
+    <ImageView
+        android:id="@+id/m_FaceSquare"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/face_shape"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_face_square" />
+
+    <ImageView
+        android:id="@+id/m_FaceTriangle"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/face_shape"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_face_triangle" />
+
+
+    <ImageView
+        android:id="@+id/f_Hair1"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/hair"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/f_hair_back_1" />
+
+    <ImageView
+        android:id="@+id/f_Hair2"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/hair"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/f_hair_2" />
+
+
+    <ImageView
+        android:id="@+id/f_Hair3"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/hair"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/f_hair_3" />
+
+    <ImageView
+        android:id="@+id/f_Hair4"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/hair"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/f_hair_4" />
+
+    <ImageView
+        android:id="@+id/f_Hair5"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/hair"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/f_hair_5" />
+
+    <ImageView
+        android:id="@+id/f_Hair6"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/hair"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/f_hair_6" />
+
+    <ImageView
+        android:id="@+id/m_Hair1"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/hair"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_hair_1" />
+
+    <ImageView
+        android:id="@+id/m_Hair2"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/hair"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_hair_2" />
+
+
+    <ImageView
+        android:id="@+id/m_Hair3"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/hair"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_hair_3" />
+
+    <ImageView
+        android:id="@+id/m_Hair4"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/hair"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_hair_4" />
+
+    <ImageView
+        android:id="@+id/m_Hair5"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/hair"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_hair_5" />
+
+    <ImageView
+        android:id="@+id/m_Hair6"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/hair"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_hair_6" />
+
+    <ImageView
+        android:id="@+id/f_ClothesBasicShirt"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/clothes"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/f_clothes_basic_shirt" />
+
+    <ImageView
+        android:id="@+id/f_ClothesBlouse"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/clothes"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/f_clothes_blouse" />
+
+    <ImageView
+        android:id="@+id/f_ClothesRetro"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/clothes"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/f_clothes_retro" />
+
+    <ImageView
+        android:id="@+id/f_ClothesShirt"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/clothes"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/f_clothes_shirt" />
+
+    <ImageView
+        android:id="@+id/f_ClothesSweater"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/clothes"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/f_clothes_sweater" />
+
+    <ImageView
+        android:id="@+id/m_ClothesShirtBasic"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/clothes"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_clothes_shirt_basic" />
+
+    <ImageView
+        android:id="@+id/m_ClothesShirtCasual"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/clothes"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_clothes_shirt_casual" />
+
+    <ImageView
+        android:id="@+id/m_ClothesShirtFormal"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/clothes"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_clothes_shirt_formal" />
+
+    <ImageView
+        android:id="@+id/m_ClothesShirtPlaid"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/clothes"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_clothes_shirt_plaid" />
+
+    <ImageView
+        android:id="@+id/m_Clothes_Sweater_Green"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/clothes"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_clothes_sweater_green" />
+
+    <ImageView
+        android:id="@+id/m_Clothes_Sweater_Grey"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/clothes"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_clothes_sweater_grey" />
+
+
+    <ImageView
+        android:id="@+id/u_GlassesAviator"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/glasses"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/u_glasses_aviator" />
+
+    <ImageView
+        android:id="@+id/u_GlassesRound"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/glasses"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/u_glasses_round" />
+
+    <ImageView
+        android:id="@+id/u_GlassesSquare"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/glasses"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/u_glasses_square" />
+
+
+    <ImageView
+        android:id="@+id/m_Beard1"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/tie"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_beard_1" />
+
+    <ImageView
+        android:id="@+id/m_Beard2"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/tie"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_beard_2" />
+
+    <ImageView
+        android:id="@+id/m_Beard3"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/tie"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_beard_3" />
+
+    <ImageView
+        android:id="@+id/m_Beard4"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/tie"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_beard_4" />
+
+    <ImageView
+        android:id="@+id/m_Beard5"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/tie"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_beard_5" />
+
+    <ImageView
+        android:id="@+id/m_Beard6"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/tie"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_beard_6" />
+
+    <ImageView
+        android:id="@+id/m_Moustache1"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/tie"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_moustache_1" />
+
+    <ImageView
+        android:id="@+id/m_Moustache2"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/tie"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_moustache_2" />
+
+    <ImageView
+        android:id="@+id/m_Moustache3"
+        android:layout_width="261dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/tie"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/m_moustache_3" />
+
+
+    <ScrollView
+        android:id="@+id/formatScrollView"
+        android:layout_width="431dp"
+        android:layout_height="229dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.211" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout_ID1"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="324dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:tabMode="scrollable">
+
+    </android.support.design.widget.TabLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager1"
+        android:layout_width="match_parent"
+        android:layout_height="323dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout_ID1">
+
+    </android.support.v4.view.ViewPager>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout_ID2"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="324dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:tabMode="scrollable">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="323dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout_ID2">
+
+    </android.support.v4.view.ViewPager>
+
+    <ImageView
+        android:id="@+id/Block1"
+        android:layout_width="181dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="348dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/transparent_4_u" />
+
+    <ImageView
+        android:id="@+id/Block2"
+        android:layout_width="202dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="496dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/transparent_4_u" />
+
+    <ImageView
+        android:id="@+id/Block3"
+        android:layout_width="161dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="512dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/formatScrollView"
+        app:srcCompat="@drawable/transparent_4_u" />
+
+
+    <LinearLayout
+        android:id="@+id/otherLayouts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:visibility="gone">
+
+        <include layout="@layout/beard_fragment" />
+        <include layout="@layout/clothing_fragment" />
+        <include layout="@layout/face_fragement" />
+        <include layout="@layout/glasses_fragment" />
+        <include layout="@layout/hair_fragment" />
+        <include layout="@layout/male_beard_fragment" />
+        <include layout="@layout/male_clothing_fragement" />
+        <include layout="@layout/male_face_fragment" />
+        <include layout="@layout/male_glasses_fragment" />
+        <include layout="@layout/male_hair_fragement" />
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
+

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/FBImageView1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="3dp"
+            android:contentDescription="@string/face_shape"
+            app:srcCompat="@drawable/f_face_oval" />
+
+        <ImageView
+            android:id="@+id/BImageView1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="3dp"
+            android:contentDescription="@string/facial_hair"
+            app:srcCompat="@drawable/m_beard_1" />
+
+        <ImageView
+            android:id="@+id/FBImageView2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="3dp"
+            android:layout_toEndOf="@+id/FBImageView1"
+            android:layout_toRightOf="@+id/FBImageView1"
+            android:contentDescription="@string/face_shape"
+            app:srcCompat="@drawable/f_face_oval" />
+
+        <ImageView
+            android:id="@+id/BImageView2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="3dp"
+            android:contentDescription="@string/facial_hair"
+            app:srcCompat="@drawable/m_beard_2" />
+
+        <ImageView
+            android:id="@+id/FBImageView3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/FBImageView1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="531dp"
+            android:contentDescription="@string/face_shape"
+            app:srcCompat="@drawable/f_face_oval"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <ImageView
+            android:id="@+id/BImageView3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignTop="@+id/FBImageView3"
+            android:layout_marginTop="-4dp"
+            android:layout_marginBottom="531dp"
+            android:contentDescription="@string/facial_hair"
+            app:srcCompat="@drawable/m_beard_3"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <ImageView
+            android:id="@+id/FBImageView4"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="205dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/face_shape"
+            app:srcCompat="@drawable/f_face_oval"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <ImageView
+            android:id="@+id/BImageView4"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="205dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/facial_hair"
+            app:srcCompat="@drawable/m_beard_4"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <ImageView
+            android:id="@+id/FBImageView5"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="410dp"
+            android:layout_marginBottom="3dp"
+            android:contentDescription="@string/face_shape"
+            app:srcCompat="@drawable/f_face_oval"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <ImageView
+            android:id="@+id/BImageView5"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/FBImageView3"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="410dp"
+            android:layout_marginBottom="3dp"
+            android:contentDescription="@string/facial_hair"
+            app:srcCompat="@drawable/m_beard_5"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <ImageView
+            android:id="@+id/FBImageView6"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="410dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/face_shape"
+            app:srcCompat="@drawable/f_face_oval"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <ImageView
+            android:id="@+id/BImageView6"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="405dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/facial_hair"
+            app:srcCompat="@drawable/m_moustache_1"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <ImageView
+            android:id="@+id/FBImageView7"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="615dp"
+            android:layout_marginBottom="3dp"
+            android:contentDescription="@string/face_shape"
+            app:srcCompat="@drawable/f_face_oval" />
+
+        <ImageView
+            android:id="@+id/BImageView7"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/FBImageView3"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="615dp"
+            android:layout_marginBottom="3dp"
+            android:contentDescription="@string/facial_hair"
+            app:srcCompat="@drawable/m_moustache_2"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <ImageView
+            android:id="@+id/FBImageView8"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="615dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/face_shape"
+            app:srcCompat="@drawable/f_face_oval"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+        <ImageView
+            android:id="@+id/BImageView8"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="615dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/facial_hair"
+            app:srcCompat="@drawable/m_moustache_3"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+</ScrollView>
+
