@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MyAchievementsActivity">
+    tools:context=".MyAchievementsFourth">
 
     <Button
         android:id="@+id/questionbutton2"
@@ -136,6 +136,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginBottom="8dp"
         android:gravity="center|top"
+        android:text="Completed 4 Level 1 Courses!"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/badge4"
@@ -146,11 +147,12 @@
         android:id="@+id/BadgeText2"
         android:layout_width="110dp"
         android:layout_height="30dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginEnd="21dp"
-        android:layout_marginRight="21dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
         android:gravity="center|top"
+        android:text="Compulsory Level 1 Courses!"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/BadgeText3"
@@ -164,6 +166,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:gravity="center|top"
+        android:text="Compulsory Level 2 courses completed!"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -176,6 +179,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:gravity="center|top"
+        android:text="Level 2 IS Electives completed!"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -185,11 +189,12 @@
         android:id="@+id/BadgeText5"
         android:layout_width="110dp"
         android:layout_height="30dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginEnd="21dp"
-        android:layout_marginRight="21dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
         android:gravity="center|top"
+        android:text="Completed half of Free Electives!"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/BadgeText6"
@@ -199,10 +204,11 @@
     <TextView
         android:id="@+id/BadgeText6"
         android:layout_width="110dp"
-        android:layout_height="30sp"
+        android:layout_height="30dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:gravity="center|top"
+        android:text="All Free Electives completed!"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -215,25 +221,135 @@
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:gravity="center|top"
+        android:text="All General Education courses! completed!!"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/badge7" />
 
 
+    <ImageView
+        android:id="@+id/ColourBadge1"
+        android:layout_width="110dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ColourBadge2"
+        android:layout_width="110dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:background="@drawable/two"
+        app:layout_constraintEnd_toStartOf="@+id/badge3"
+        app:layout_constraintStart_toEndOf="@+id/badge1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ColourBadge3"
+        android:layout_width="110dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/three"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ColourBadge4"
+        android:layout_width="110dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/four"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BadgeText1" />
+
+    <ImageView
+        android:id="@+id/ColourBadge5"
+        android:layout_width="110dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:background="@drawable/five"
+        app:layout_constraintEnd_toStartOf="@+id/badge6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/badge4"
+        app:layout_constraintTop_toBottomOf="@+id/BadgeText2" />
+
+    <ImageView
+        android:id="@+id/ColourBadge6"
+        android:layout_width="110dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/six"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BadgeText3" />
+
+    <ImageView
+        android:id="@+id/ColourBadge7"
+        android:layout_width="110dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/seven"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BadgeText4" />
+
+    <ImageView
+        android:id="@+id/ColourBadge8"
+        android:layout_width="110dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:background="@drawable/eight"
+        app:layout_constraintEnd_toStartOf="@+id/badge9"
+        app:layout_constraintStart_toEndOf="@+id/badge7"
+        app:layout_constraintTop_toBottomOf="@+id/BadgeText5" />
+
+    <ImageView
+        android:id="@+id/ColourBadge9"
+        android:layout_width="110dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/nine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BadgeText6" />
+
     <TextView
         android:id="@+id/BadgeText8"
         android:layout_width="110dp"
         android:layout_height="30dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginEnd="21dp"
-        android:layout_marginRight="21dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
         android:gravity="center|top"
+        android:text="Completed all core courses! "
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/BadgeText9"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/BadgeText7"
         app:layout_constraintTop_toBottomOf="@+id/badge8" />
 
@@ -244,6 +360,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:gravity="center|top"
+        android:text="Completed your degree!"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

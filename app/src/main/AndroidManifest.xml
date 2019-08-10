@@ -23,9 +23,38 @@
         <activity
             android:name=".MyProfileActivity"
             android:label="My Profile" />
-        <activity
-            android:name=".MyAchievementsActivity"
-            android:label="My Achievements" />
+        <activity android:name=".MyAchievementsActivity"
+            android:label="My Achievements">
+            <intent-filter>
+                <action android:name="com.example.gradlink.MyAchievementsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MyAchievementsSecond"
+            android:label="My Achievements Questions">
+            <intent-filter>
+                <action android:name="com.example.gradlink.MyAchievementsSecond" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MyAchievementsThird"
+            android:label="My Achievements">
+            <intent-filter>
+                <action android:name="com.example.gradlink.MyAchievementsThird" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MyAchievementsFourth"
+            android:label="My Achievements">
+            <intent-filter>
+                <action android:name="com.example.gradlink.MyAchievementsFourth" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MyAvatarActivity"
             android:label="My Avatar" />
