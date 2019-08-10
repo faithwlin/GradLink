@@ -184,7 +184,7 @@
     <Button
         android:id="@+id/submitbutton2"
         android:layout_width="17dp"
-        android:layout_height="47dp"
+        android:layout_height="34dp"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"

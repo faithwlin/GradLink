@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/FBImageView1"
             android:layout_width="200dp"
             android:layout_height="200dp"
@@ -81,10 +81,10 @@
             android:layout_alignTop="@+id/FBImageView3"
             android:layout_marginTop="-4dp"
             android:layout_marginBottom="531dp"
-            android:contentDescription="@string/facial_hair"
-            app:srcCompat="@drawable/m_beard_3"
             android:clickable="true"
-            android:focusable="true"/>
+            android:contentDescription="@string/facial_hair"
+            android:focusable="true"
+            app:srcCompat="@drawable/m_beard_3" />
 
         <ImageView
             android:id="@+id/FBImageView4"
