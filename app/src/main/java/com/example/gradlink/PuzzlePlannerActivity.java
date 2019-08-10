@@ -181,21 +181,18 @@ public class PuzzlePlannerActivity extends NavigationActivity implements View.On
         findViewById(R.id.col1_4).setOnDragListener(this);
         findViewById(R.id.col1_5).setOnDragListener(this);
         findViewById(R.id.col1_6).setOnDragListener(this);
-        findViewById(R.id.col1_7).setOnDragListener(this);
         findViewById(R.id.col2_1).setOnDragListener(this);
         findViewById(R.id.col2_2).setOnDragListener(this);
         findViewById(R.id.col2_3).setOnDragListener(this);
         findViewById(R.id.col2_4).setOnDragListener(this);
         findViewById(R.id.col2_5).setOnDragListener(this);
         findViewById(R.id.col2_6).setOnDragListener(this);
-        findViewById(R.id.col2_7).setOnDragListener(this);
         findViewById(R.id.col3_1).setOnDragListener(this);
         findViewById(R.id.col3_2).setOnDragListener(this);
         findViewById(R.id.col3_3).setOnDragListener(this);
         findViewById(R.id.col3_4).setOnDragListener(this);
         findViewById(R.id.col3_5).setOnDragListener(this);
         findViewById(R.id.col3_6).setOnDragListener(this);
-        findViewById(R.id.col3_7).setOnDragListener(this);
 
 
 
@@ -288,8 +285,7 @@ public class PuzzlePlannerActivity extends NavigationActivity implements View.On
                 // Gets the text data from the item.
                 String dragData = item.getText().toString();
 
-                // Displays a message containing the dragged data.
-                Toast.makeText(this, "Dragged data is " + dragData, Toast.LENGTH_SHORT).show();
+
 
                 // Turns off any color tints
                 view.getBackground().clearColorFilter();
