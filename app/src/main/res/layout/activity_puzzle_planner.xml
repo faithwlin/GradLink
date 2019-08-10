@@ -59,12 +59,12 @@
 
         <TextView
             android:id="@+id/term1"
-            android:textSize="13dp"
-            android:text=" Term 1/2019"
-            android:inputType="text"
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:textColor="#1e3143" />
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text=" Term 1 2019"
+            android:textColor="#1e3143"
+            android:textSize="13dp" />
 
 
         <LinearLayout
@@ -80,12 +80,12 @@
 
         <TextView
             android:id="@+id/term2"
-            android:textSize="13dp"
-            android:text=" Term 2/2019"
-            android:inputType="text"
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:textColor="#1e3143" />
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text=" Term 2/ 2019"
+            android:textColor="#1e3143"
+            android:textSize="13dp" />
 
 
         <LinearLayout
@@ -99,12 +99,12 @@
 
         <TextView
             android:id="@+id/term3"
-            android:textSize="13dp"
-            android:text=" Term 3/2019"
-            android:inputType="text"
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:textColor="#1e3143" />
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text=" Term 3/ 2019"
+            android:textColor="#1e3143"
+            android:textSize="13dp" />
 
 
         <LinearLayout
@@ -118,12 +118,12 @@
 
         <TextView
             android:id="@+id/term4"
-            android:textSize="13dp"
-            android:text=" Term 1/2020"
-            android:inputType="text"
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:textColor="#1e3143" />
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text=" Term 1/ 2020"
+            android:textColor="#1e3143"
+            android:textSize="13dp" />
 
         <LinearLayout
             android:id="@+id/col0_4"
@@ -136,12 +136,12 @@
 
         <TextView
             android:id="@+id/term5"
-            android:textSize="13dp"
-            android:text=" Term 2/2020"
-            android:inputType="text"
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:textColor="#1e3143" />
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text=" Term 2/ 2020"
+            android:textColor="#1e3143"
+            android:textSize="13dp" />
 
         <LinearLayout
             android:id="@+id/col0_5"
@@ -154,12 +154,12 @@
 
         <TextView
             android:id="@+id/term6"
-            android:textSize="13dp"
-            android:text=" Term 3/2020"
-            android:inputType="text"
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:textColor="#1e3143" />
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text=" Term 3/ 2020"
+            android:textColor="#1e3143"
+            android:textSize="13dp" />
 
         <LinearLayout
             android:id="@+id/col0_6"
@@ -474,6 +474,8 @@
             android:tag="acct1501"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" ACCT1501 "
             android:textColor="@android:color/black"
@@ -485,6 +487,8 @@
             android:id="@+id/mgmt1001"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" MGMT1001 "
             android:textColor="@android:color/black"
@@ -494,6 +498,8 @@
             android:id="@+id/infs1602"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" INFS1602 "
             android:textColor="@android:color/black"
@@ -503,6 +509,8 @@
             android:id="@+id/infs1603"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" INFS1603 "
             android:textColor="@android:color/black"
@@ -512,6 +520,8 @@
             android:id="@+id/infs1609"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" INFS1609 "
             android:textColor="@android:color/black"
@@ -521,6 +531,8 @@
             android:id="@+id/econ1203"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" ECON1203 "
             android:textColor="@android:color/black"
@@ -530,6 +542,8 @@
             android:id="@+id/math1041"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" MATH1041 "
             android:textColor="@android:color/black"
@@ -539,6 +553,8 @@
             android:id="@+id/acct1511"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" ACCT1511 "
             android:textColor="@android:color/black"
@@ -548,6 +564,8 @@
             android:id="@+id/econ1101"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" ECON1101 "
             android:textColor="@android:color/black"
@@ -557,6 +575,8 @@
             android:id="@+id/infs2603"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" INFS2603 "
             android:textColor="@android:color/black"
@@ -566,6 +586,8 @@
             android:id="@+id/infs2605"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" INFS2605 "
             android:textColor="@android:color/black"
@@ -575,6 +597,8 @@
             android:id="@+id/infs2608"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" INFS2608 "
             android:textColor="@android:color/black"
@@ -584,6 +608,8 @@
             android:id="@+id/infs2621"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" INFS2621 "
             android:textColor="@android:color/black"
@@ -593,6 +619,8 @@
             android:id="@+id/infs3603"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" INFS3603 "
             android:textColor="@android:color/black"
@@ -603,6 +631,8 @@
             android:id="@+id/infs3604"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" INFS3604 "
             android:textColor="@android:color/black"
@@ -612,6 +642,8 @@
             android:id="@+id/infs3605"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" INFS3605 "
             android:textColor="@android:color/black"
@@ -621,6 +653,8 @@
             android:id="@+id/infs3617"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" INFS3617 "
             android:textColor="@android:color/black"
@@ -630,6 +664,8 @@
             android:id="@+id/infs3634"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" INFS3634 "
             android:textColor="@android:color/black"
@@ -639,6 +675,8 @@
             android:id="@+id/infs2631"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" INFS2631 "
             android:textColor="@android:color/black"
@@ -648,6 +686,8 @@
             android:id="@+id/infs3020"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" INFS3020 "
             android:textColor="@android:color/black"
@@ -657,6 +697,8 @@
             android:id="@+id/infs3632"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" INFS3632 "
             android:textColor="@android:color/black"
@@ -666,6 +708,8 @@
             android:id="@+id/infs3830"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" INFS3830 "
             android:textColor="@android:color/black"
@@ -675,6 +719,8 @@
             android:id="@+id/infs3873"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" INFS3873 "
             android:textColor="@android:color/black"
@@ -684,6 +730,8 @@
             android:id="@+id/f_elec_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" F_ELEC_1 "
             android:textColor="@android:color/black"
@@ -693,6 +741,8 @@
             android:id="@+id/f_elec_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" F_ELEC_2 "
             android:textColor="@android:color/black"
@@ -702,6 +752,8 @@
             android:id="@+id/f_elec_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" F_ELEC_3 "
             android:textColor="@android:color/black"
@@ -711,6 +763,8 @@
             android:id="@+id/f_elec_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" F_ELEC_4 "
             android:textColor="@android:color/black"
@@ -720,6 +774,8 @@
             android:id="@+id/gen1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" GEN_1 "
             android:textColor="@android:color/black"
@@ -729,6 +785,8 @@
             android:id="@+id/gen2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
             android:gravity="center"
             android:text=" GEN_2 "
             android:textColor="@android:color/black"
